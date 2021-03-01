@@ -2,40 +2,32 @@
 
 body {
     font-size: 100%;
-    width: 100%;
-    height: auto;
     font-family: 'Roboto Mono', monospace;
-    margin: 0 auto;
-    max-width: 85em;
-    padding-top: 8vh;
+}
+
+
+#container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    line-height: 10vh;
 }
 
 #greeting {
-    font-size: 7vh;
+    font-size: 4vh;
     font-weight: 600;
-}
-
-#name {
-    font-size: 10vh;
-    font-weight: 900;
-    padding-left: 10.5vh;
+    
 }
 
 .line {
-    margin-bottom: 3vh;
-    margin-top: 3vh;
-    padding-left: 10.5vh;
-    font-size: 3vh;
-    display: inline-block;
+    font-size: 2vh;
     font-weight: 200;
 }
 
-#mainContent {
-    margin-top: 4vh;
-}
-
 #codeText {
-    font-size: 4vh;
+    font-size: 3vh;
     font-weight: 900;
 }
 
@@ -44,12 +36,12 @@ body {
     justify-content: center;
     align-items: center;
     align-content: space-between;
+    padding-top: 8vh;
 }
 
 .icon {
-    padding: 2vw;
-    margin-top: 9vh;
     font-size: 4vh;
+    padding: 0 1vw 0 1vw;
 }
 
 
