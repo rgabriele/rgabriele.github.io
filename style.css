@@ -5,6 +5,9 @@ body {
     font-family: 'Roboto Mono', monospace;
 }
 
+a {
+    color: black;
+}
 
 #container {
     display: flex;
@@ -12,16 +15,16 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    line-height: 10vh;
 }
 
 #greeting {
     font-size: 4vh;
     font-weight: 600;
-    
 }
 
 .line {
+    display: block;
+    padding:3vh 0;
     font-size: 2vh;
     font-weight: 200;
 }
