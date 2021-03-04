@@ -14,7 +14,7 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: 88vh;
 }
 
 #greeting {
@@ -39,13 +39,23 @@ a {
     justify-content: center;
     align-items: center;
     align-content: space-between;
-    padding-top: 8vh;
+    padding-top: 10vh;
 }
 
 .icon {
     font-size: 4vh;
-    padding: 0 1vw 0 1vw;
+    padding: 0 1vw;
 }
 
+a {
+    text-decoration: none;
+}
 
+#link  {
+    background-color: rgba(0, 0, 0, 0.15);
+}
 
+footer {
+    position: fixed;
+    bottom: 25px;
+}
