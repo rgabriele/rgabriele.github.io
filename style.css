@@ -3,10 +3,11 @@
 body {
     font-size: 100%;
     font-family: 'Roboto Mono', monospace;
+    color: #fff;
 }
 
 a {
-    color: black;
+    color: #fff;
 }
 
 #container {
@@ -57,4 +58,18 @@ a {
 
 footer {
     text-align: center;
+    color: #CACACA;
+    font-size: 1.5vh;
+}
+
+#animated-canvas {
+    position: fixed;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
 }

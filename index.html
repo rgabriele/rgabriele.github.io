@@ -12,6 +12,30 @@
 </head>
 
 <body>
+    <!-- Create a <canvas> element -->
+    <canvas id="animated-canvas"></canvas>
+
+    <!-- Call the script -->
+    <script src="granim.min.js"></script>
+
+    <!-- Create a Granim instance -->
+    <script>
+    var granimInstance = new Granim({
+    element: '#animated-canvas',
+    name: 'animated-background',
+    direction: 'radial',
+    opacity: [1, 1],
+    states : {
+        "default-state": {
+            gradients: [
+                ['#0023E9', '#c600e9'],
+                ['#8c001e', '#2f085e']
+            ]
+        }
+    }
+    });
+    </script>
+
     <div>
         <div id="container">
             <div id="content">
