@@ -23,14 +23,16 @@
     var granimInstance = new Granim({
     element: '#animated-canvas',
     name: 'animated-background',
-    direction: 'radial',
+    direction: 'top-bottom',
     opacity: [1, 1],
     states : {
         "default-state": {
             gradients: [
-                ['#0023E9', '#c600e9'],
-                ['#8c001e', '#2f085e']
-            ]
+                ['#0086FF', '#005099'],
+                ['#39D85C', '#1E8334'],
+                ['#E150D5', '#8A3583']
+            ],
+            transitionSpeed: 7000
         }
     }
     });
@@ -42,7 +44,7 @@
                 <span class="line" id="greeting">👋 Hi, I'm Riley!</span> <br>
                 <span class="line">	👨‍🎓 I'm a recent university graduate.</span> <br>
                 <span class="line"> 👨‍💻 I studied Computer Science at the <a href="https://www.uwo.ca/" id="link">University of Western Ontario</a>.</span> <br>
-                <span class="line" id="codeText"> I love creating solutions with clean code + design.</span>
+                <span class="line" id="codeText"> I love creating solutions with elegant code + design.</span>
                 
                 <div id="icons">
                     <a href="mailto:me@rileygabriele.com"><i class="fas fa-envelope icon"></i></a>
@@ -51,7 +53,7 @@
                 </div>
             </div>
         </div>
-        <footer>Copyright © 2021 Riley Gabriele. Made with ❤️ and 🎧 in Ontario.</footer>
+        <footer>Copyright © 2021 Riley Gabriele. Made with ❤️ and <a href="https://music.apple.com/profile/rileyagabriele">🎧</a> in Ontario.</footer>
     </div>
 </body>
 </html>

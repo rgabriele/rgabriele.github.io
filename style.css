@@ -3,11 +3,12 @@
 body {
     font-size: 100%;
     font-family: 'Roboto Mono', monospace;
-    color: #fff;
+    color: white;
 }
 
 a {
-    color: #fff;
+    color: white;
+    text-decoration: none;
 }
 
 #container {
@@ -25,7 +26,7 @@ a {
 
 .line {
     display: block;
-    padding:3vh 0;
+    padding: 3vh 0;
     font-size: 2.5vh;
     font-weight: 200;
 }
@@ -46,19 +47,25 @@ a {
 .icon {
     font-size: 5vh;
     padding: 0 1vw;
+    transition: 0.5s;
 }
 
-a {
-    text-decoration: none;
+.icon:hover {
+    font-size: 6vh;
 }
 
 #link  {
-    background-color: rgba(0, 0, 0, 0.15);
+    background-color: rgba(255, 255, 255, 0.10);
+    transition: 0.5s;
+}
+
+#link:hover {
+    background-color: rgba(255, 255, 255, 0.30);
 }
 
 footer {
     text-align: center;
-    color: #CACACA;
+    opacity: 0.5;
     font-size: 1.5vh;
 }
 
