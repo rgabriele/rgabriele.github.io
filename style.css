@@ -19,11 +19,6 @@ a {
     min-height: 88vh;
 }
 
-#greeting {
-    font-size: 4vh;
-    font-weight: 600;
-}
-
 .line {
     display: block;
     padding: 3vh 0;
@@ -31,9 +26,32 @@ a {
     font-weight: 200;
 }
 
+#greeting {
+    font-size: 4vh;
+    font-weight: 600;
+    opacity: 0;
+    animation-name: fadeinTop;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+
+#bio {
+    opacity: 0;
+    animation-name: fadeinLeft;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+}
+
 #codeText {
     font-size: 3vh;
     font-weight: 900;
+    opacity: 0;
+    animation-name: fadeinTop;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 2.5s;
 }
 
 #icons {
@@ -51,7 +69,43 @@ a {
 }
 
 .icon:hover {
-    font-size: 6vh;
+    transform: scale(1.5);
+}
+
+#mail {
+    transition: 0.5s;
+    opacity: 0;
+    animation-name: fadeinBottom;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 4s;
+}
+
+#github {
+    transition: 00.5s;
+    opacity: 0;
+    animation-name: fadeinBottom;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 4.5s;
+}
+
+#cv{
+    opacity: 0;
+    animation-name: fadeinBottom;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 5s;
+}
+
+footer {
+    text-align: center;
+    opacity: 0;
+    font-size: 1.5vh;
+    animation-name: fadein;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 5.75s;
 }
 
 #link  {
@@ -61,12 +115,6 @@ a {
 
 #link:hover {
     background-color: rgba(255, 255, 255, 0.30);
-}
-
-footer {
-    text-align: center;
-    opacity: 0.5;
-    font-size: 1.5vh;
 }
 
 #animated-canvas {
@@ -79,4 +127,50 @@ footer {
     bottom: 0;
     left: 0;
     z-index: -1;
+}
+
+@keyframes fadeinTop {
+    from {
+        transform: translateY(-5vh);
+        opacity: 0;
+    }
+    
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeinBottom {
+    from {
+        transform: translateY(5vh);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeinLeft {
+    from {
+        transform: translateX(5vh);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    
+    to {
+        opacity: 0.5;
+    }
 }

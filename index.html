@@ -23,7 +23,13 @@
     var granimInstance = new Granim({
     element: '#animated-canvas',
     name: 'animated-background',
-    direction: 'top-bottom',
+    direction: 'custom',
+    customDirection: {
+        x0: '35%',
+        y0: '15px',
+        x1: '60%',
+        y1: '70%',
+    },
     opacity: [1, 1],
     states : {
         "default-state": {
@@ -42,18 +48,20 @@
         <div id="container">
             <div id="content">
                 <span class="line" id="greeting">👋 Hi, I'm Riley!</span> <br>
-                <span class="line">	👨‍🎓 I'm a recent university graduate.</span> <br>
-                <span class="line"> 👨‍💻 I studied Computer Science at the <a href="https://www.uwo.ca/" id="link">University of Western Ontario</a>.</span> <br>
+                <div id="bio">
+                    <span class="line">	👨‍🎓 I'm a recent university graduate.</span> <br>
+                    <span class="line"> 👨‍💻 I studied Computer Science at the <a href="https://www.uwo.ca/" id="link">University of Western Ontario</a>.</span> <br>
+                </div>
                 <span class="line" id="codeText"> I love creating solutions with elegant code + design.</span>
                 
                 <div id="icons">
-                    <a href="mailto:me@rileygabriele.com"><i class="fas fa-envelope icon"></i></a>
-                    <a href="https://github.com/rgabriele"><i class="fab fa-github icon"></i></a>
-                    <a href="https://drive.google.com/file/d/14UIMneaCmWTdcdARe4xVN5OEAOUx379K/view?usp=sharing"><i class="far fa-file icon"></i></a>
+                    <div id="mail"><a href="mailto:me@rileygabriele.com"><i class="fas fa-envelope icon"></i></a></div>
+                    <div id="github"><a href="https://github.com/rgabriele"><i class="fab fa-github icon"></i></a></div>
+                    <div id="cv"><a href="https://drive.google.com/file/d/14UIMneaCmWTdcdARe4xVN5OEAOUx379K/view?usp=sharing"><i class="far fa-file icon"></i></a></div>
                 </div>
             </div>
         </div>
-        <footer>Copyright © 2021 Riley Gabriele. Made with ❤️ and <a href="https://music.apple.com/profile/rileyagabriele">🎧</a> in Ontario.</footer>
+        <footer>Copyright © 2021 Riley Gabriele. Made with ❤️ and <a href="https://music.apple.com/profile/rileygabriele">🎧</a> in Ontario.</footer>
     </div>
 </body>
 </html>
