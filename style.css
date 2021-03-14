@@ -35,6 +35,14 @@ a {
     animation-fill-mode: forwards;
 }
 
+#wave {
+    display: inline-block;
+    animation-name: wave;
+    animation-duration: 2.5s;
+    animation-delay: 6s;
+    animation-iteration-count: infinite;
+    transform-origin: 70% 70%;
+}
 
 #bio {
     opacity: 0;
@@ -173,4 +181,14 @@ footer {
     to {
         opacity: 0.5;
     }
+}
+
+
+@keyframes wave {
+    0%  { transform: rotate( 0.0deg) }
+    10% { transform: rotate(14.0deg) }
+    20% { transform: rotate(-14.0deg)}
+    30% { transform: rotate(14.0deg) }
+    40% { transform: rotate(0.0deg)  }
+    100%{ transform: rotate( 0.0deg) }
 }
